@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /*White*/
+    --foreground: 240 5.9% 10%; /*Primary Black*/
+    --primary: 205 16% 67%; /*Rick and Morty Blue*/
+    --muted: 240 4.8% 95.9%;
+    --accent: 200 9% 36%; /*Rick and Morty Darker Blue*/
+    --destructive: 0 72% 35%;
+    --border: 205 16% 67%; /*Rick and Morty Blue*/
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  .home-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-header {
+    @apply bg-accent;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    color: white;
+  }
+
+  .app-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@layer components {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 14px;
+    margin-right: -24px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fafafa;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border: 3px solid #fafafa;
+    background: #c1c1c1;
+    border-radius: 10px;
+    width: 6px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8a8787;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}

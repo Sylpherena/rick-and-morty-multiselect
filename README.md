@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Rick and Morty MultiSelect
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A multiselect component with public [Rick&Morty API](https://rickandmortyapi.com/). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and uses typescript.
+Accessibility enabled by [Downshift library](https://www.downshift-js.com/).
+
+You can view this project on this [link](https://rnm-multiselect.vercel.app/).
+
+## Used Libraries
+
+* Downshift
+* Tailwind
+* Axios
+* Lucide-react
 
 ## Available Scripts
 
